@@ -23,6 +23,13 @@ pipeline
         }
         
         {
+          stage ('approval')
+          { steps
+           { input 'please provide your approval?'}
+          }
+        }
+        
+        {
           stage ( 'code deploy')
           { steps 
            { sh 'echo deploying code'}
