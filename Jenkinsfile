@@ -21,6 +21,13 @@ pipeline
         { steps
              { sh 'echo build generated'}
         }
+        
+        {
+          stage ( 'code deploy')
+          { steps 
+           { sh 'echo deploying code'}
+          }
+        }
       }
     }
   }
