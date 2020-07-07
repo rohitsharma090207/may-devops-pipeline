@@ -2,12 +2,12 @@ pipeline{
 
 agent any
 
-  stages{
-  
-    stage ('code cloning')
+  stages{ ('code cloning')
     
-    steps {
-            sh 'echo code cloning in process'}
-  
+         { steps 
+          {
+            sh 'echo code cloning in process'
+          }
+         } 
   }
 }
