@@ -1,8 +1,11 @@
-pipeline{
+pipeline
+{
 
 agent any
 
-  stages{ ('code cloning')
+  stages
+  { 
+    stage ('stage-1-clone')
     
          { steps 
           {
