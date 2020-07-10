@@ -7,7 +7,7 @@ pipeline{
             steps{
                 git branch: 'master', url: 'https://github.com/rohitsharma090207/may-devops-pipeline'
             }
-        
+        }
         stage('Compilation')
         {
             steps{
@@ -17,6 +17,6 @@ pipeline{
 
             }
         }
-        }
+        
     }
 }
